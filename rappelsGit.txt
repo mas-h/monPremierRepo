@@ -44,6 +44,12 @@ Petite fiche de rappels concernant git & github :
 
  	ø git reset --hard : annule tous les changements que je n'ai pas encore commités
 
+ 	ø git clone (option HTTPS OU SSH) : copie une repository sur votre machine
+
+ 	ø git push origin master : "Envoie mes modifs dans la branche master de mon remote origin."
+
+ 	ø git pull origin master : Envoie dans mon répertoire local les dernières modifications de la branche master située sur mon remote origin (qui correspond ici à GitHub).
+
  ¤ Un commit c'est quoi ? 
 
    Un commit est une modification, un ajout, une supression, ... La somme des commit forme le projet.
@@ -64,3 +70,27 @@ Petite fiche de rappels concernant git & github :
  		
  		soit externe : (grâce à des services comme GitHub ou BitBucket)
 			permettra de travailler sur des projets à plusieurs, pour que tout le monde ai accès aux dernières modifications de chacun sur un remote partagé.
+
+ ¤ Utilisation de GitHub :
+
+ 	GitHub est un service en ligne qui permet d'héberger ses repositories de code. GitHub est un outil gratuit pour héberger du code open source, et propose également des plans payants pour les projets de code privés. C'est le numéro 1 mondial et il héberge plus d'une dizaine de millions de repositories ! 
+
+ 	→ Communiquer avec d'autres développeurs et signaler des problèmes de code en déclarant des "issues" ;
+
+    → Partager des morceaux de code en ligne à l'aide de "gists" ;
+
+    → Proposer des modifications de code à d'autres repos en faisant des "pull requests" ;
+
+    → Et même récupérer du code depuis un autre repository.
+
+    ø Créer repository : 
+
+    	Cliquez sur le bouton "Create new" symbolisé par un signe "+" en haut à droite de votre écran, puis "New repository". 
+
+		GitHub vous demandera alors de préciser quelques détails sur votre repository:
+
+   			→ son nom
+
+   			→ sa description
+
+    		→ son statut public ou privé. Ici, nous partageons du code open-source, c'est donc public et gratuit 
