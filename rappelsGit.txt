@@ -15,6 +15,7 @@ Petite fiche de rappels concernant git & github :
  	→ faire son premier commit: git commit -m "monMessage" // utilisation d'un verbe conjugué d'action + nom fichier. Exemple "Ajouté rappelsGit.txt"
  
  ¤ Les commandes git utiles : 
+ 	http://gelendir.github.io/linuq/2014/03/08/introduction-git.html // lien intéressant.
 
  	ø git init : fais reconnaitre un dossier par git
 
@@ -55,4 +56,11 @@ Petite fiche de rappels concernant git & github :
 
     Ajouté rappelsGit.txt // sa description
 
+ ¤ Utilisation d'un remote : 
 
+ 	un remote est un backup de votre code sur une autre machine :
+
+ 		soit interne : (si vous avez la chance d'avoir plusieurs ordinateurs)
+ 		
+ 		soit externe : (grâce à des services comme GitHub ou BitBucket)
+			permettra de travailler sur des projets à plusieurs, pour que tout le monde ai accès aux dernières modifications de chacun sur un remote partagé.
