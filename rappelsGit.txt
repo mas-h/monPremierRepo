@@ -10,8 +10,36 @@ Petite fiche de rappels concernant git & github :
  ¤ Ensuite, faire indexer un répertoire par git : 
 
  	→ se placer dans le répertoire souhaité // cd monRepertoire; création d'un dossier: mkdir monDossier; création d'un fichier: touch monFichier.ext (ext = extension)
- 	→ git init // à taper dans la console, le répertoire est maintenant reconnu comme un index git. 
+ 	→ git init // à taper dans la console, le répertoire est maintenant reconnu comme un index git. A ne faire qu'une seule fois 
  	→ il faut maintenant rajouté tous les fichiers du repertoire à l'index : git add nomFichier ou git add . (ajoute tous les fichiers, attention à son utilisation)
  	→ faire son premier commit: git commit -m "monMessage" // utilisation d'un verbe conjugué d'action + nom fichier. Exemple "Ajouté rappelsGit.txt"
  
- 
+ ¤ Les commandes git utiles : 
+
+ 	ø git init : fais reconnaitre un dossier par git
+
+ 	ø git add : rajoute un dossier/fichier à l'index git 
+ 	ø git commit -m : permet d'enregistrer une modification avec un message la décrivant
+
+ 	* mettre à jours un fichier = git add + git commit -m comme décris plus haut. 
+ 	** SI juste mettre à jours un fichier DEJA INDEXE alors possibilité d'utiliser : git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"
+
+ 	ø git log : affiche la liste de tous les commits que vous avez réalisés ! Pour quitter, appuyer sur touche 'q' du clavier.
+
+ 	ø git status : permet de savoir si tout va bien ou s'il y a des choses à affectuer 
+
+ 	ø git branch : indique sur quelle branche on se situe, travaille.
+
+ ¤ Un commit c'est quoi ? 
+
+   Un commit est une modification, un ajout, une supression, ... La somme des commit forme le projet.
+
+   Lorsque l'on tape la commande git log, un exemple d'un commit :
+
+ 	commit a5ed860e28749a22330ab5656cd43edcd355f8eb // son SHA : son identifiant unique, qui se présente sous forme d'une longue chaîne de caractères et de nombres. 
+	Author: mas-h <sam_2901@hotmail.fr> // son auteur, qui a fait le commit
+	Date:   Thu May 4 19:16:11 2017 +0200 // sa date 
+
+    Ajouté rappelsGit.txt // sa description
+
+
