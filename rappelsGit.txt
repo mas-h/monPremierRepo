@@ -1,0 +1,17 @@
+Petite fiche de rappels concernant git & github :
+ 
+ l'installation de git n'est pas énoncée ici. Personnellement, je suis sous linux, il n'y a qu'à installer les paquets dédiés, rien de compliqué.
+ 
+ ¤ Une fois l'installation terminée, il faut que git nous reconnaisse. Pour cela, il faut taper dans la console :
+ 	
+ 	git config --global user.email "you@example.com" // On lui fourni notre adresse mail.
+  	git config --global user.name "Your Name" // Notre pseudo. Ces informations sont normalement les mêmes que celles de votre compte github.
+
+ ¤ Ensuite, faire indexer un répertoire par git : 
+
+ 	→ se placer dans le répertoire souhaité // cd monRepertoire; création d'un dossier: mkdir monDossier; création d'un fichier: touch monFichier.ext (ext = extension)
+ 	→ git init // à taper dans la console, le répertoire est maintenant reconnu comme un index git. 
+ 	→ il faut maintenant rajouté tous les fichiers du repertoire à l'index : git add nomFichier ou git add . (ajoute tous les fichiers, attention à son utilisation)
+ 	→ faire son premier commit: git commit -m "monMessage" // utilisation d'un verbe conjugué d'action + nom fichier. Exemple "Ajouté rappelsGit.txt"
+ 
+ 
