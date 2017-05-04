@@ -50,6 +50,12 @@ Petite fiche de rappels concernant git & github :
 
  	ø git pull origin master : Envoie dans mon répertoire local les dernières modifications de la branche master située sur mon remote origin (qui correspond ici à GitHub).
 
+ 	ø git merge nomBranch : fusionne deux branch ensembles. Pour fusionner la branch A avec la branch B. se positionner sur A et git merge B.
+
+ 	ø git blame nomdufichier.extension : Cette commande liste toutes les modifications qui ont été faites sur le fichier ligne par ligne. À chaque modification est associé le début du sha du commit correspondant. 
+
+ 	ø git show : renvoie directement les détails du commit recherché en saisissant le début de son sha 
+ 
  ¤ Un commit c'est quoi ? 
 
    Un commit est une modification, un ajout, une supression, ... La somme des commit forme le projet.
