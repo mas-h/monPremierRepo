@@ -23,6 +23,7 @@ Petite fiche de rappels concernant git & github :
 
  	* mettre à jours un fichier = git add + git commit -m comme décris plus haut. 
  	** SI juste mettre à jours un fichier DEJA INDEXE alors possibilité d'utiliser : git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"
+ 	// L'option   -a demande à Git de mettre à jour les fichiers déjà existants dans son index.
 
  	ø git log : affiche la liste de tous les commits que vous avez réalisés ! Pour quitter, appuyer sur touche 'q' du clavier.
 
@@ -30,6 +31,12 @@ Petite fiche de rappels concernant git & github :
 
  	ø git branch : indique sur quelle branche on se situe, travaille.
 
+ 	ø git checkout -- <fichier> : annuler les modifications apportées sur le document
+
+ 	ø git checkout SHADuCommit : se positionner sur un commit 
+
+ 	ø git checkout nomBranche : se positionner sur la branche (branche principale = master )
+ 	
  ¤ Un commit c'est quoi ? 
 
    Un commit est une modification, un ajout, une supression, ... La somme des commit forme le projet.
