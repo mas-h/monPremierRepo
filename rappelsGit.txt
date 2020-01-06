@@ -1,40 +1,40 @@
 Petite fiche de rappels concernant git & github :
- 
- l'installation de git n'est pas énoncée ici. Personnellement, je suis sous linux, il n'y a qu'à installer les paquets dédiés, rien de compliqué.
- 
+
+
+
  ¤ Une fois l'installation terminée, il faut que git nous reconnaisse. Pour cela, il faut taper dans la console :
- 	
+
  	git config --global user.email "you@example.com" // On lui fourni notre adresse mail.
   	git config --global user.name "Your Name" // Notre pseudo. Ces informations sont normalement les mêmes que celles de votre compte github.
 
- ¤ Ensuite, faire indexer un répertoire par git : 
+ ¤ Ensuite, faire indexer un répertoire par git :
 
  	→ se placer dans le répertoire souhaité // cd monRepertoire; création d'un dossier: mkdir monDossier; création d'un fichier: touch monFichier.ext (ext = extension)
- 	→ git init // à taper dans la console, le répertoire est maintenant reconnu comme un index git. A ne faire qu'une seule fois 
+ 	→ git init // à taper dans la console, le répertoire est maintenant reconnu comme un index git. A ne faire qu'une seule fois
  	→ il faut maintenant rajouté tous les fichiers du repertoire à l'index : git add nomFichier ou git add . (ajoute tous les fichiers, attention à son utilisation)
  	→ faire son premier commit: git commit -m "monMessage" // utilisation d'un verbe conjugué d'action + nom fichier. Exemple "Ajouté rappelsGit.txt"
- 
- ¤ Les commandes git utiles : 
+
+ ¤ Les commandes git utiles :
  	http://gelendir.github.io/linuq/2014/03/08/introduction-git.html // lien intéressant.
 
  	ø git init : fais reconnaitre un dossier par git
 
- 	ø git add : rajoute un dossier/fichier à l'index git 
+ 	ø git add : rajoute un dossier/fichier à l'index git
  	ø git commit -m : permet d'enregistrer une modification avec un message la décrivant
 
- 	* mettre à jours un fichier = git add + git commit -m comme décris plus haut. 
+ 	* mettre à jours un fichier = git add + git commit -m comme décris plus haut.
  	** SI juste mettre à jours un fichier DEJA INDEXE alors possibilité d'utiliser : git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"
  	// L'option   -a demande à Git de mettre à jour les fichiers déjà existants dans son index.
 
  	ø git log : affiche la liste de tous les commits que vous avez réalisés ! Pour quitter, appuyer sur touche 'q' du clavier.
 
- 	ø git status : permet de savoir si tout va bien ou s'il y a des choses à affectuer 
+ 	ø git status : permet de savoir si tout va bien ou s'il y a des choses à effectuer 
 
  	ø git branch : indique sur quelle branche on se situe, travaille.
 
  	ø git checkout -- <fichier> : annuler les modifications apportées sur le document
 
- 	ø git checkout SHADuCommit : se positionner sur un commit 
+ 	ø git checkout SHADuCommit : se positionner sur un commit
 
  	ø git checkout nomBranche : se positionner sur la branche (branche principale = master )
 
@@ -52,34 +52,38 @@ Petite fiche de rappels concernant git & github :
 
  	ø git merge nomBranch : fusionne deux branch ensembles. Pour fusionner la branch A avec la branch B. se positionner sur A et git merge B.
 
- 	ø git blame nomdufichier.extension : Cette commande liste toutes les modifications qui ont été faites sur le fichier ligne par ligne. À chaque modification est associé le début du sha du commit correspondant. 
+ 	ø git blame nomdufichier.extension : Cette commande liste toutes les modifications qui ont été faites sur le fichier ligne par ligne. À chaque modification est associé le début du sha du commit correspondant.
 
- 	ø git show : renvoie directement les détails du commit recherché en saisissant le début de son sha 
- 
- ¤ Un commit c'est quoi ? 
+ 	ø git show : renvoie directement les détails du commit recherché en saisissant le début de son sha
+
+ 	ø git stash : mettre de côté vos modifications en cours.
+ 	ø git stash pop : récupérer les modifications que vous aviez mises de côté
+ 	ø git stash apply : appliquer les modifications mises de coté
+
+ ¤ Un commit c'est quoi ?
 
    Un commit est une modification, un ajout, une supression, ... La somme des commit forme le projet.
 
    Lorsque l'on tape la commande git log, un exemple d'un commit :
 
- 	commit a5ed860e28749a22330ab5656cd43edcd355f8eb // son SHA : son identifiant unique, qui se présente sous forme d'une longue chaîne de caractères et de nombres. 
+ 	commit a5ed860e28749a22330ab5656cd43edcd355f8eb // son SHA : son identifiant unique, qui se présente sous forme d'une longue chaîne de caractères et de nombres.
 	Author: mas-h <sam_2901@hotmail.fr> // son auteur, qui a fait le commit
-	Date:   Thu May 4 19:16:11 2017 +0200 // sa date 
+	Date:   Thu May 4 19:16:11 2017 +0200 // sa date
 
     Ajouté rappelsGit.txt // sa description
 
- ¤ Utilisation d'un remote : 
+ ¤ Utilisation d'un remote :
 
  	un remote est un backup de votre code sur une autre machine :
 
  		soit interne : (si vous avez la chance d'avoir plusieurs ordinateurs)
- 		
+
  		soit externe : (grâce à des services comme GitHub ou BitBucket)
 			permettra de travailler sur des projets à plusieurs, pour que tout le monde ai accès aux dernières modifications de chacun sur un remote partagé.
 
  ¤ Utilisation de GitHub :
 
- 	GitHub est un service en ligne qui permet d'héberger ses repositories de code. GitHub est un outil gratuit pour héberger du code open source, et propose également des plans payants pour les projets de code privés. C'est le numéro 1 mondial et il héberge plus d'une dizaine de millions de repositories ! 
+ 	GitHub est un service en ligne qui permet d'héberger ses repositories de code. GitHub est un outil gratuit pour héberger du code open source, et propose également des plans payants pour les projets de code privés. C'est le numéro 1 mondial et il héberge plus d'une dizaine de millions de repositories !
 
  	→ Communiquer avec d'autres développeurs et signaler des problèmes de code en déclarant des "issues" ;
 
@@ -89,9 +93,9 @@ Petite fiche de rappels concernant git & github :
 
     → Et même récupérer du code depuis un autre repository.
 
-    ø Créer repository : 
+    ø Créer repository :
 
-    	Cliquez sur le bouton "Create new" symbolisé par un signe "+" en haut à droite de votre écran, puis "New repository". 
+    	Cliquez sur le bouton "Create new" symbolisé par un signe "+" en haut à droite de votre écran, puis "New repository".
 
 		GitHub vous demandera alors de préciser quelques détails sur votre repository:
 
@@ -99,4 +103,6 @@ Petite fiche de rappels concernant git & github :
 
    			→ sa description
 
-    		→ son statut public ou privé. Ici, nous partageons du code open-source, c'est donc public et gratuit 
+    		→ son statut public ou privé. Ici, nous partageons du code open-source, c'est donc public et gratuit
+
+ ¤ .gitignore : ce fichier à mettre à la source du projet permet d'ignorer certains types de fichier par git.
